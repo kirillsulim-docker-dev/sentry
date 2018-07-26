@@ -72,7 +72,6 @@ if postgres:
     }
 
 # You should not change this setting after your database has been created
-# unless you have altered all schemas first
 SENTRY_USE_BIG_INTS = True
 
 # If you're expecting any kind of real traffic on Sentry, we highly recommend
@@ -81,6 +80,7 @@ SENTRY_USE_BIG_INTS = True
 ###########
 # General #
 ###########
+SENTRY_BEACON = False
 
 # Instruct Sentry that this install intends to be run by a single organization
 # and thus various UI optimizations should be enabled.
